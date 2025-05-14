@@ -9,7 +9,7 @@ var debug = process.env.LOCAL_EVALUATION_CONFIG_DEBUG || false;
 var serverUrl = process.env.LOCAL_EVALUATION_CONFIG_SERVER_URL || "http://api.lambdatest.com";
 var flagConfigPollingIntervalMillis = process.env.LOCAL_EVALUATION_CONFIG_POLL_INTERVAL || 120;
 var apiRequestTimeout = process.env.LOCAL_EVALUATION_API_REQUEST_TIMEOUT || 10;
-var deploymentKey = process.env.LOCAL_EVALUATION_DEPLOYMENT_KEY || "server-jAqqJaX3l8PgNiJpcv9j20ywPzANQQFh";;
+var deploymentKey = process.env.LOCAL_EVALUATION_DEPLOYMENT_KEY || "server-jAqqJaX3l8PgNiJpcv9j20ywPzANQQFh";
 
 
 async function initializeRootOrg(retries = 3) {

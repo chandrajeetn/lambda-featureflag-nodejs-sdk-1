@@ -12,6 +12,9 @@ class Client {
     }
 
     async start() {
+        if (this.poller) {
+            this.poller.stop();
+        }
         this.poller = new Poller();
         this.poller.poll(this.config.flagConfigPollerInterval, () => this.pollFlags());
         return this.pollFlags();
